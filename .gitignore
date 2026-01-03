@@ -1,0 +1,24 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Dados
+data/database/*.duckdb
+data/raw/*.csv
+
+
+# dbt
+dbt_packages/
+target/
+dbt_modules/
+logs/
+
+# Jupyter Notebooks
+.ipynb_checkpoints

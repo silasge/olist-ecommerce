@@ -1,0 +1,30 @@
+version: 2
+
+# external sources
+sources:
+  - name: olist
+    tables:
+      - name: customers
+        meta:
+          external_location: "read_csv('../data/raw/olist_customers_dataset.csv')"
+      - name: geolocation
+        meta:
+          external_location: "read_csv('../data/raw/olist_geolocation_dataset.csv')"
+      - name: order_items
+        meta:
+          external_location: "read_csv('../data/raw/olist_order_items_dataset.csv')"
+      - name: order_payments
+        meta:
+          external_location: "read_csv('../data/raw/olist_order_payments_dataset.csv')"
+      - name: order_reviews
+        meta:
+          external_location: "read_csv('../data/raw/olist_order_reviews_dataset.csv')"
+      - name: orders
+        meta:
+          external_location: "read_csv('../data/raw/olist_orders_dataset.csv')"
+      - name: products
+        meta:
+          external_location: "read_csv('../data/raw/olist_products_dataset.csv')"
+      - name: sellers
+        meta:
+          external_location: "read_csv('../data/raw/olist_sellers_dataset.csv')"
