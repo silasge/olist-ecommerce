@@ -18,7 +18,7 @@ def load_config(config_path: Path) -> dict:
     return config
 
 
-def download_dataset(dataset_name: str) -> str:
+def download_dataset(dataset_name: str) -> Path:
     """
     Downloads a dataset from Kaggle using kagglehub.
 
@@ -27,7 +27,7 @@ def download_dataset(dataset_name: str) -> str:
         download_path (Path): The path where the dataset will be downloaded.
     """
     path = kagglehub.dataset_download(handle=dataset_name, force_download=True)
-    return path
+    return Path(path)
 
 
 def move_dataset(src_path: Path, dest_path: Path) -> None:
