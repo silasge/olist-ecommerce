@@ -22,3 +22,4 @@ logs/
 
 # Jupyter Notebooks
 .ipynb_checkpoints
+notebooks/exploracao.ipynb

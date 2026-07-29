@@ -9,6 +9,9 @@ dependencies = [
     "dbt-duckdb>=1.10.0",
     "duckdb>=1.4.3",
     "ipykernel>=7.1.0",
+    "jupyterlab>=4.6.2",
     "kagglehub>=0.3.13",
     "pandas>=2.3.3",
+    "polars>=1.42.1",
+    "pyarrow>=25.0.0",
 ]
